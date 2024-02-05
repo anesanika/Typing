@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(90, 90, 165);
+  overflow: hidden;
+}
+
+
+.cont{
+  width: 1500px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.gameStart{
+  width: 50%;
+  height: 400px;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  position: absolute;   
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px white;
+}
+button{
+  width: 250px;
+  height: 50px;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  border: none;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:active{
+  background: rgba(131,58,180,1);
+}
+
+span{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+  top: 0;
+  transition: .8s;
+}
+#span1{
+  left: -100%;
+}
+#span2{
+  right: -100%;
+}

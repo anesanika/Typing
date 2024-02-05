@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="cont">
+    <div class="gameStart">
+      <button>Start</button>
+    </div>
+  </div>
+  <span id="span1"></span>
+  <span id="span2"></span>
+  <script>
+    const btn = document.querySelector('button');
+    const span1 = document.getElementById('span1');
+    const span2 = document.getElementById('span2');
+
+    btn.addEventListener('click', () =>{
+      
+      span1.style.left = '0';
+      span2.style.right = '0';
+
+      setInterval(() =>{
+        window.location.href = "game/game.html";
+      }, 1400)
+    })
+    
+  </script>
+</body>
+</html>
